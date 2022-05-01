@@ -75,6 +75,31 @@ turtle_6.right(180)
 turtle_7.forward(0.5 * length)
 turtle_7.right(180)
 
+turtle_1.pensize(width)
+turtle_2.pensize(width)
+turtle_3.pensize(width)
+turtle_4.pensize(width)
+turtle_5.pensize(width)
+turtle_6.pensize(width)
+turtle_7.pensize(width)
+
 color_1 = input(print("Player 1, choose a color" )
 color_1 = color_1.lower()
+color_2 = input(print("Player 2, choose a color" )
+color_2 = color_2.lower()
+if color_1 == color_2:
+    print("Oops, you picked the same color. ")
+
+player_1 = None
+player_2 = None
+win = False
+
+while win == False:
+    move_1 = int(input(print("Player 1, which column would you like to place a chip in? ")))
+    if move_1 == 1:
+        turtle_1.pencolor(color_1)
+        turtle_1.down
+        
+
+
 
