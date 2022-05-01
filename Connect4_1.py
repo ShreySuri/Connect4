@@ -90,11 +90,21 @@ color_2 = color_2.lower()
 if color_1 == color_2:
     print("Oops, you picked the same color. ")
 
-player_1 = None
-player_2 = None
+player_1 = ["placeholder"]
+player_2 = ["placeholder"]
 win = False
 move_1 = None
 move_2 = None
+counter_1 = 0
+counter_2 = 0
+counter_3 = 0
+counter_4 = 0
+counter_5 = 0
+counter_6 = 0
+counter_7 = 0
+turn = 1
+append_count_1 = 0
+append_count_2 = 0
 
 while win == False:
     while move_1 != 1 or move_1 != 2 or move_1 != 3 or move_1 != 4 or move_1 != 5 or move_1 != 6 or move_1 != 7:
@@ -105,50 +115,58 @@ while win == False:
         turtle_1.down
         turtle_1.forward(1)
         turtle_1.up()
+        counter_1 = counter_1 + 1
     elif move_1 == 2:
         turtle_2.pencolor(color_1)
         turtle_2.forward(0.5 * width)
         turtle_2.down
         turtle_2.forward(1)
         turtle_2.up()
+        counter_2 = counter_2 + 1
     elif move_1 == 3:
         turtle_3.pencolor(color_1)
         turtle_3.forward(0.5 * width)
         turtle_3.down
         turtle_3.forward(1)
         turtle_3.up()
-    elif move_1 == 3:
-        turtle_3.pencolor(color_1)
-        turtle_3.forward(0.5 * width)
-        turtle_3.down
-        turtle_3.forward(1)
-        turtle_3.up()
+        counter_3 = counter_3 + 1
     elif move_1 == 4:
         turtle_4.pencolor(color_1)
         turtle_4.forward(0.5 * width)
         turtle_4.down
         turtle_4.forward(1)
         turtle_4.up()
+        counter_4 = counter_4 + 1
     elif move_1 == 5:
         turtle_5.pencolor(color_1)
         turtle_5.forward(0.5 * width)
         turtle_5.down
         turtle_5.forward(1)
         turtle_5.up()
+        counter_5 = counter_5 + 1
     elif move_1 == 6:
         turtle_6.pencolor(color_1)
         turtle_6.forward(0.5 * width)
         turtle_6.down
         turtle_6.forward(1)
         turtle_6.up()
+        counter_6 = counter_6 + 1
     elif move_1 == 7:
         turtle_7.pencolor(color_1)
         turtle_7.forward(0.5 * width)
         turtle_7.down
         turtle_7.forward(1)
         turtle_7.up()
+        counter_7 = counter_7 + 1
     else:
         print("That isn't an integer from 1 - 7.")
 
-
+    coordinate = 10 * move_1 + counter
+    player_1.append(coordinate)
+    append_count_1 = append_count_1 + 1
+    if append_count_1 == 1:
+        player_1.remove("placeholder")
+    elif append_count_1 >= 4:
+        player_1.sort()
+        for i in range
 
