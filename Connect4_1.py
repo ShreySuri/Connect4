@@ -75,3 +75,6 @@ turtle_6.right(180)
 turtle_7.forward(0.5 * length)
 turtle_7.right(180)
 
+color_1 = input(print("Player 1, choose a color" )
+color_1 = color_1.lower()
+
