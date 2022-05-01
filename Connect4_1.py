@@ -83,9 +83,9 @@ turtle_5.pensize(width)
 turtle_6.pensize(width)
 turtle_7.pensize(width)
 
-color_1 = input(print("Player 1, choose a color" )
+color_1 = input(print("Player 1, choose a color" ))
 color_1 = color_1.lower()
-color_2 = input(print("Player 2, choose a color" )
+color_2 = input(print("Player 2, choose a color" ))
 color_2 = color_2.lower()
 if color_1 == color_2:
     print("Oops, you picked the same color. ")
@@ -93,13 +93,62 @@ if color_1 == color_2:
 player_1 = None
 player_2 = None
 win = False
+move_1 = None
+move_2 = None
 
 while win == False:
-    move_1 = int(input(print("Player 1, which column would you like to place a chip in? ")))
+    while move_1 != 1 or move_1 != 2 or move_1 != 3 or move_1 != 4 or move_1 != 5 or move_1 != 6 or move_1 != 7:
+        move_1 = int(input(print("Player 1, which column would you like to place a chip in? Choose an integer from 1 - 7. ")))
     if move_1 == 1:
         turtle_1.pencolor(color_1)
+        turtle_1.forward(0.5 * width)
         turtle_1.down
-        
+        turtle_1.forward(1)
+        turtle_1.up()
+    elif move_1 == 2:
+        turtle_2.pencolor(color_1)
+        turtle_2.forward(0.5 * width)
+        turtle_2.down
+        turtle_2.forward(1)
+        turtle_2.up()
+    elif move_1 == 3:
+        turtle_3.pencolor(color_1)
+        turtle_3.forward(0.5 * width)
+        turtle_3.down
+        turtle_3.forward(1)
+        turtle_3.up()
+    elif move_1 == 3:
+        turtle_3.pencolor(color_1)
+        turtle_3.forward(0.5 * width)
+        turtle_3.down
+        turtle_3.forward(1)
+        turtle_3.up()
+    elif move_1 == 4:
+        turtle_4.pencolor(color_1)
+        turtle_4.forward(0.5 * width)
+        turtle_4.down
+        turtle_4.forward(1)
+        turtle_4.up()
+    elif move_1 == 5:
+        turtle_5.pencolor(color_1)
+        turtle_5.forward(0.5 * width)
+        turtle_5.down
+        turtle_5.forward(1)
+        turtle_5.up()
+    elif move_1 == 6:
+        turtle_6.pencolor(color_1)
+        turtle_6.forward(0.5 * width)
+        turtle_6.down
+        turtle_6.forward(1)
+        turtle_6.up()
+    elif move_1 == 7:
+        turtle_7.pencolor(color_1)
+        turtle_7.forward(0.5 * width)
+        turtle_7.down
+        turtle_7.forward(1)
+        turtle_7.up()
+    else:
+        print("That isn't an integer from 1 - 7.")
 
 
 
