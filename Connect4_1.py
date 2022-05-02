@@ -168,5 +168,9 @@ while win == False:
         player_1.remove("placeholder")
     elif append_count_1 >= 4:
         player_1.sort()
-        for i in range
+        for i in range (0, append_count_1 - 3):
+            if player_1[i+3] - player_1[i+2] == player_1[i+2] - player_1[i+1] == player_1[i+1] - player_1[i] == 1 :
+                win = True
+    else:
+        win = False
 
