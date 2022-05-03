@@ -91,7 +91,9 @@ if color_1 == color_2:
     print("Oops, you picked the same color. ")
 
 player_1 = ["placeholder"]
+player_1_diagonal = ["placeholder"]
 player_2 = ["placeholder"]
+player_2_diagonal = ["placeholder"]
 win = False
 move_1 = None
 move_2 = None
