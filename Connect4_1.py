@@ -173,4 +173,17 @@ while win == False:
                 win = True
     else:
         win = False
-
+        
+    if win == False:
+        for i in range(0, append_count_1):
+            x = player_1[i] % 10
+            y = int((player_1[i] - x)/10)
+            coordinate = 10 * x + y
+        if append_count_1 >= 4:
+            player_1.sort()
+            for i in range (0, append_count_1 - 3):
+                if player_1[i+3] - player_1[i+2] == player_1[i+2] - player_1[i+1] == player_1[i+1] - player_1[i] == 1 :
+                    win = True
+        else:
+            win = False
+    
