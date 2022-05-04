@@ -195,4 +195,18 @@ while win == False:
         y = int((player_1[i] - x)/10)
         coordinate = 10 * x + y
         player_1[i] = coordinate
+
+    x = coordinate % 11
+    if x < 6:
+        x = x + 11
+    else:
+        x = x + 0
+    y = coordinate % 9
+    z = x + y
+    if z % 2 == 0:
+        y = y + 9
+    else:
+        y = y + 0
+            
+    
     
