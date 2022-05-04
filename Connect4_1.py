@@ -196,17 +196,18 @@ while win == False:
         coordinate = 10 * x + y
         player_1[i] = coordinate
 
-    x = coordinate % 11
-    if x < 6:
-        x = x + 11
+    x = coordinate % 9
+    y = int((coordinate - x)/9)
+    if y = 8:
+        y = 7
+    diagonal_coordinate = 10 * x + y
+    if 20 <= diagonal_coordinate <= 49:
+        # do nothing
     else:
-        x = x + 0
-    y = coordinate % 9
-    z = x + y
-    if z % 2 == 0:
-        y = y + 9
-    else:
-        y = y + 0
+        player_1_diagonal.append(diagonal_coordinate)
+        player_1_diagonal.sort()
+        
+    
             
     
     
