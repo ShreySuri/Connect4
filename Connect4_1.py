@@ -198,8 +198,6 @@ while win == False:
 
     x = coordinate % 9
     y = int((coordinate - x)/9)
-    if y = 8:
-        y = 7
     diagonal_coordinate = 10 * x + y
     if 20 <= diagonal_coordinate <= 49:
         # do nothing
