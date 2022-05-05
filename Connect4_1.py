@@ -107,6 +107,7 @@ counter_7 = 0
 turn = 1
 append_count_1 = 0
 append_count_2 = 0
+do_nothing_toggle = True
 
 while win == False:
     while move_1 != 1 or move_1 != 2 or move_1 != 3 or move_1 != 4 or move_1 != 5 or move_1 != 6 or move_1 != 7:
@@ -200,7 +201,7 @@ while win == False:
     y = int((coordinate - x)/9)
     diagonal_coordinate = 10 * x + y
     if 20 <= diagonal_coordinate <= 49:
-        # do nothing
+        do_nothing_toggle = False
     else:
         player_1_diagonal.append(diagonal_coordinate)
         player_1_diagonal.sort()
@@ -219,7 +220,7 @@ while win == False:
         coordinate = 10 * x + y
         player_1[i] = coordinate
     if 20 <= diagonal_coordinate <= 49:
-        # do nothing
+        do_nothing_toggle = True
     else:
         player_1_diagonal.append(diagonal_coordinate)
         player_1_diagonal.sort()
