@@ -213,7 +213,24 @@ while win == False:
         else:
             win = False
     
-        
+    for i in range(0, append_count_1):
+        x = player_1[i] % 10
+        y = int((player_1[i] - x)/10)
+        coordinate = 10 * x + y
+        player_1[i] = coordinate
+    if 20 <= diagonal_coordinate <= 49:
+        # do nothing
+    else:
+        player_1_diagonal.append(diagonal_coordinate)
+        player_1_diagonal.sort()
+        if append_count == 1:
+            player_1_diagonal.remove("placeholder")
+        elif append_count >= 10:
+            for i in range (0, append_count - 9):
+                if player_1_diagonal[i+3] - player_1_diagonal[i+2] ==  player_1_diagonal[i+2] - player_1_diagonal[i+1] == player_1_diagonal[i+1] - player_1_diagonal[i+1] == 1:
+                    win = True
+        else:
+            win = False
         
     
             
