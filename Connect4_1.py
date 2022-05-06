@@ -338,18 +338,21 @@ while win == False:
         else:
             win = False
     
-    x = 8 - x
-    diagonal_coordinate = 
+    for i in range(0, append_count_2):
+        x = player_2[i] % 10
+        y = int((player_2[i] - x)/10)
+        coordinate = 10 * x + y
+        player_2[i] = coordinate
     if 20 <= diagonal_coordinate <= 49:
         do_nothing_toggle = True
     else:
-        player_1_diagonal.append(diagonal_coordinate)
-        player_1_diagonal.sort()
-        if append_count == 1:
-            player_1_diagonal.remove("placeholder")
-        elif append_count >= 10:
+        player_2_diagonal.append(diagonal_coordinate)
+        player_2_diagonal.sort()
+        if append_count_2 == 1:
+            player_2_diagonal.remove("placeholder")
+        elif append_count_2 >= 10:
             for i in range (0, append_count - 9):
-                if player_1_diagonal[i+3] - player_1_diagonal[i+2] ==  player_1_diagonal[i+2] - player_1_diagonal[i+1] == player_1_diagonal[i+1] - player_1_diagonal[i+1] == 1:
+                if player_2_diagonal[i+3] - player_2_diagonal[i+2] ==  player_2_diagonal[i+2] - player_2_diagonal[i+1] == player_2_diagonal[i+1] - player_2_diagonal[i+1] == 1:
                     win = True
         else:
             win = False
