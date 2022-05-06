@@ -265,21 +265,21 @@ while win == False:
         turtle_4.up()
         counter_4 = counter_4 + 1
     elif move_2 == 5:
-        turtle_5.pencolor(color_1)
+        turtle_5.pencolor(color_2)
         turtle_5.forward(0.5 * width)
         turtle_5.down
         turtle_5.forward(1)
         turtle_5.up()
         counter_5 = counter_5 + 1
     elif move_2 == 6:
-        turtle_6.pencolor(color_1)
+        turtle_6.pencolor(color_2)
         turtle_6.forward(0.5 * width)
         turtle_6.down
         turtle_6.forward(1)
         turtle_6.up()
         counter_6 = counter_6 + 1
     elif move_2 == 7:
-        turtle_7.pencolor(color_1)
+        turtle_7.pencolor(color_2)
         turtle_7.forward(0.5 * width)
         turtle_7.down
         turtle_7.forward(1)
@@ -289,37 +289,37 @@ while win == False:
         print("That isn't an integer from 1 - 7.")
 
     coordinate = 10 * move_2 + counter
-    player_1.append(coordinate)
-    append_count_1 = append_count_1 + 1
+    player_2.append(coordinate)
+    append_count_2 = append_count_2 + 1
     if append_count_1 == 1:
-        player_1.remove("placeholder")
-    elif append_count_1 >= 4:
-        player_1.sort()
-        for i in range (0, append_count_1 - 3):
-            if player_1[i+3] - player_1[i+2] == player_1[i+2] - player_1[i+1] == player_1[i+1] - player_1[i] == 1 :
+        player_2.remove("placeholder")
+    elif append_count_2 >= 4:
+        player_2.sort()
+        for i in range (0, append_count_2 - 3):
+            if player_2[i+3] - player_2[i+2] == player_2[i+2] - player_2[i+1] == player_2[i+1] - player_2[i] == 1 :
                 win = True
     else:
         win = False
         
     if win == False:
-        for i in range(0, append_count_1):
-            x = player_1[i] % 10
-            y = int((player_1[i] - x)/10)
+        for i in range(0, append_count_2):
+            x = player_2[i] % 10
+            y = int((player_2[i] - x)/10)
             coordinate = 10 * x + y
-            player_1[i] = coordinate
-        if append_count_1 >= 4:
-            player_1.sort()
-            for i in range (0, append_count_1 - 3):
-                if player_1[i+3] - player_1[i+2] == player_1[i+2] - player_1[i+1] == player_1[i+1] - player_1[i] == 1 :
+            player_2[i] = coordinate
+        if append_count_2 >= 4:
+            player_2.sort()
+            for i in range (0, append_count_2 - 3):
+                if player_2[i+3] - player_2[i+2] == player_2[i+2] - player_2[i+1] == player_2[i+1] - player_2[i] == 1 :
                     win = True
         else:
             win = False
 
-    for i in range(0, append_count_1):
-        x = player_1[i] % 10
-        y = int((player_1[i] - x)/10)
+    for i in range(0, append_count_2):
+        x = player_2[i] % 10
+        y = int((player_2[i] - x)/10)
         coordinate = 10 * x + y
-        player_1[i] = coordinate
+        player_2[i] = coordinate
 
     x = coordinate % 9
     y = int((coordinate - x)/9)
@@ -327,22 +327,19 @@ while win == False:
     if 20 <= diagonal_coordinate <= 49:
         do_nothing_toggle = False
     else:
-        player_1_diagonal.append(diagonal_coordinate)
-        player_1_diagonal.sort()
-        if append_count == 1:
+        player_2_diagonal.append(diagonal_coordinate)
+        player_2_diagonal.sort()
+        if append_count_2 == 1:
             player_1_diagonal.remove("placeholder")
-        elif append_count >= 10:
+        elif append_count_2 >= 10:
             for i in range (0, append_count - 9):
-                if player_1_diagonal[i+3] - player_1_diagonal[i+2] ==  player_1_diagonal[i+2] - player_1_diagonal[i+1] == player_1_diagonal[i+1] - player_1_diagonal[i+1] == 1:
+                if player_2_diagonal[i+3] - player_2_diagonal[i+2] ==  player_2_diagonal[i+2] - player_2_diagonal[i+1] == player_2_diagonal[i+1] - player_2_diagonal[i+1] == 1:
                     win = True
         else:
             win = False
     
-    for i in range(0, append_count_1):
-        x = player_1[i] % 10
-        y = int((player_1[i] - x)/10)
-        coordinate = 10 * x + y
-        player_1[i] = coordinate
+    x = 8 - x
+    diagonal_coordinate = 
     if 20 <= diagonal_coordinate <= 49:
         do_nothing_toggle = True
     else:
