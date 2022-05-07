@@ -215,10 +215,13 @@ while win == False:
             win = False
     
     for i in range(0, append_count_1):
-        x = player_1[i] % 10
-        y = int((player_1[i] - x)/10)
+        x = player_1_diagonal[i] % 10
+        y = int((player_1_diagonal[i] - x)/10)
+        y = 8 - y
+        diagonal_coordinate = 10 * y + x
+        x = coordinate % 9
+        y = int((coordinate - x)/9)
         diagonal_coordinate = 10 * x + y
-        player_1[i] = diagonal_coordinate
     if 20 <= diagonal_coordinate <= 49:
         do_nothing_toggle = True
     else:
