@@ -294,6 +294,7 @@ while win == False:
         turtle_6.forward(1)
         turtle_6.up()
         counter_6 = counter_6 + 1
+        counter = counter_6
     elif move_2 == 7:
         turtle_7.pencolor(color_2)
         turtle_7.forward(0.5 * width)
@@ -301,6 +302,7 @@ while win == False:
         turtle_7.forward(1)
         turtle_7.up()
         counter_7 = counter_7 + 1
+        counter = counter_7
     else:
         print("That isn't an integer from 1 - 7.")
 
