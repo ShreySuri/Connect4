@@ -110,8 +110,8 @@ append_count_2 = 0
 do_nothing_toggle = True
 
 while win == False:
-    while move_1 != 1 or move_1 != 2 or move_1 != 3 or move_1 != 4 or move_1 != 5 or move_1 != 6 or move_1 != 7:
-        move_1 = int(input(print("Player 1, which column would you like to place a chip in? Choose an integer from 1 - 7. ")))
+
+    move_1 = int(input(print("Player 1, which column would you like to place a chip in? Choose an integer from 1 - 7. ")))
     if move_1 == 1:
         turtle_1.pencolor(color_1)
         turtle_1.forward(0.5 * width)
@@ -119,6 +119,7 @@ while win == False:
         turtle_1.forward(1)
         turtle_1.up()
         counter_1 = counter_1 + 1
+        counter = counter_1
     elif move_1 == 2:
         turtle_2.pencolor(color_1)
         turtle_2.forward(0.5 * width)
@@ -126,6 +127,7 @@ while win == False:
         turtle_2.forward(1)
         turtle_2.up()
         counter_2 = counter_2 + 1
+        counter = counter_2
     elif move_1 == 3:
         turtle_3.pencolor(color_1)
         turtle_3.forward(0.5 * width)
@@ -133,6 +135,7 @@ while win == False:
         turtle_3.forward(1)
         turtle_3.up()
         counter_3 = counter_3 + 1
+        counter = counter_3
     elif move_1 == 4:
         turtle_4.pencolor(color_1)
         turtle_4.forward(0.5 * width)
@@ -140,6 +143,7 @@ while win == False:
         turtle_4.forward(1)
         turtle_4.up()
         counter_4 = counter_4 + 1
+        counter = counter_4
     elif move_1 == 5:
         turtle_5.pencolor(color_1)
         turtle_5.forward(0.5 * width)
@@ -147,6 +151,7 @@ while win == False:
         turtle_5.forward(1)
         turtle_5.up()
         counter_5 = counter_5 + 1
+        counter = counter_5
     elif move_1 == 6:
         turtle_6.pencolor(color_1)
         turtle_6.forward(0.5 * width)
@@ -154,6 +159,7 @@ while win == False:
         turtle_6.forward(1)
         turtle_6.up()
         counter_6 = counter_6 + 1
+        counter = counter_6
     elif move_1 == 7:
         turtle_7.pencolor(color_1)
         turtle_7.forward(0.5 * width)
@@ -161,6 +167,7 @@ while win == False:
         turtle_7.forward(1)
         turtle_7.up()
         counter_7 = counter_7 + 1
+        counter = counter_7
     else:
         print("That isn't an integer from 1 - 7.")
 
@@ -239,8 +246,7 @@ while win == False:
             win = False
 
 
-    while move_2 != 1 or move_2 != 2 or move_2 != 3 or move_2 != 4 or move_2 != 5 or move_2 != 6 or move_2 != 7:
-        move_2 = int(input(print("Player 1, which column would you like to place a chip in? Choose an integer from 1 - 7. ")))
+    move_2 = int(input(print("Player 2, which column would you like to place a chip in? Choose an integer from 1 - 7. ")))
     if move_2 == 1:
         turtle_1.pencolor(color_2)
         turtle_1.forward(0.5 * width)
