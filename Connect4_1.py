@@ -254,6 +254,7 @@ while win == False:
         turtle_1.forward(1)
         turtle_1.up()
         counter_1 = counter_1 + 1
+        counter = counter_1
     elif move_2 == 2:
         turtle_2.pencolor(color_2)
         turtle_2.forward(0.5 * width)
@@ -261,6 +262,7 @@ while win == False:
         turtle_2.forward(1)
         turtle_2.up()
         counter_2 = counter_2 + 1
+        counter = counter_2
     elif move_2 == 3:
         turtle_3.pencolor(color_2)
         turtle_3.forward(0.5 * width)
@@ -268,6 +270,7 @@ while win == False:
         turtle_3.forward(1)
         turtle_3.up()
         counter_3 = counter_3 + 1
+        counter = counter_3
     elif move_2 == 4:
         turtle_4.pencolor(color_2)
         turtle_4.forward(0.5 * width)
@@ -275,6 +278,7 @@ while win == False:
         turtle_4.forward(1)
         turtle_4.up()
         counter_4 = counter_4 + 1
+        counter = counter_4
     elif move_2 == 5:
         turtle_5.pencolor(color_2)
         turtle_5.forward(0.5 * width)
@@ -282,6 +286,7 @@ while win == False:
         turtle_5.forward(1)
         turtle_5.up()
         counter_5 = counter_5 + 1
+        counter = counter_5
     elif move_2 == 6:
         turtle_6.pencolor(color_2)
         turtle_6.forward(0.5 * width)
