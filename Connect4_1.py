@@ -200,6 +200,7 @@ while win == False:
     x = coordinate % 9
     y = int((coordinate - x)/9)
     diagonal_coordinate = 10 * x + y
+    
     if 20 <= diagonal_coordinate <= 49:
         do_nothing_toggle = False
     else:
@@ -214,14 +215,15 @@ while win == False:
         else:
             win = False
     
-    for i in range(0, append_count_1):
-        x = player_1_diagonal[i] % 10
-        y = int((player_1_diagonal[i] - x)/10)
-        y = 8 - y
-        diagonal_coordinate = 10 * y + x
-        x = coordinate % 9
-        y = int((coordinate - x)/9)
-        diagonal_coordinate = 10 * x + y
+
+    x = coordinate % 10
+    y = int((coordinate - x)/10)
+    y = 8 - y
+    diagonal_coordinate = 10 * y + x
+    x = coordinate % 9
+    y = int((coordinate - x)/9)
+    diagonal_coordinate = 10 * x + y
+    
     if 20 <= diagonal_coordinate <= 49:
         do_nothing_toggle = True
     else:
@@ -340,6 +342,14 @@ while win == False:
                     win = True
         else:
             win = False
+
+    x = coordinate % 10
+    y = int((coordinate - x)/10)
+    y = 8 - y
+    diagonal_coordinate = 10 * y + x
+    x = coordinate % 9
+    y = int((coordinate - x)/9)
+    diagonal_coordinate = 10 * x + y
     
     for i in range(0, append_count_2):
         x = player_2[i] % 10
