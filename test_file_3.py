@@ -58,7 +58,13 @@ for k in range (0, 21):
 
 for l in range (0, 12):
     rem = l % 4
-    quot = s
+    quot = int((i - rem)/3)
+    co_ord = quot * 10 + rem
+    co_ord = co_ord + 11
+    a = co_ord % 11
+    b = co_ord + 33
+
+    if 
 
 
 
