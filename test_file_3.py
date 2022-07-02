@@ -1,4 +1,40 @@
-win_game_list = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+win_list = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+co_ord = column * 10 + row
+
+if co_ord == 11:
+    
+elif co_ord == 21:
+    win_list[0] = win_list[0] + 1
+    win_list[24] = win_list[24] + 1
+    win_list[45] = win_list[45] + 1
+elif co_ord == 31:
+    
+elif co_ord == 41:
+
+elif co_ord == 51:
+
+elif co_ord == 61:
+
+elif co_ord == 71:
+
+elif co_ord == 12:
+
+elif co_ord == 22:
+
+elif co_ord == 32:
+
+elif co_ord == 42:
+
+elif co_ord == 52:
+
+elif co_ord == 62:
+
+elif co_ord == 72:
+
+
+
+
 
 for i in range (0, 57):
     if i < 24:
