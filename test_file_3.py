@@ -104,16 +104,3 @@ for l in range (0, 12):
 
 
 
-
-if row == 1 and column >= 1 and column < 5:
-    x = win_game_list[0]
-    x = x + 1
-    win_game_list[0] = x
-if row == 1 and column >= 2 and column < 6:
-    x = win_game_list[1]
-    x = x + 1
-    win_game_list[1] = x
-if row == 1 and column >= 3 and column < 7:
-    x = win_game_list[2]
-    x = x + 1
-    win_game_list[2] = x
