@@ -20,15 +20,6 @@ def add_to_list(a, b, c, d, e, f, g, h, i, j, k, l, m):
     
 
 
-
-
-
-
-
-
-
-
-
 if co_ord == 11:
     add_to_list(0, 24, 45, 68, 68, 68, 68, 68, 68, 68, 68, 68, 68)
 elif co_ord == 21:
@@ -56,76 +47,5 @@ elif co_ord == 52:
 elif co_ord == 62:
 
 elif co_ord == 72:
-
-
-
-
-
-for i in range (0, 57):
-    if i < 24:
-        win_type = "horizontal"
-    elif i >= 24 and i < 45:
-        win_type = "vertical"
-    elif i >= 45 and i < 57:
-        win_type = "diagonal"
-    else:
-        win_type = None
-
-    if win_type == "horizontal":
-        rem = i % 4
-        quot = int((i - rem)/6)
-        a = quot + 1
-        b = rem + 1
-        c = rem + 4
-    elif win_type == "vertical":
-        rem = i % 7
-        quot = int((i - rem)/3)
-        a = quot + 1
-        b = quot + 4
-        c = rem + 1
-
-
-
-for j in range (0, 24):
-    rem = i % 4
-    quot = int((i - rem)/6)
-    a = quot + 1
-    b = rem + 1
-    c = rem + 4
-
-    if row == a and column >= b and column <= c:
-        x = win_game_list[j]
-        x = x + 1
-        win_game_list[j] = x
-    else:
-        toggle = False
-
-for k in range (0, 21):
-    rem = i % 7
-    quot = int((i - rem)/3)
-    a = quot + 1
-    b = quot + 4
-    c = rem + 1
-    k = k + 24
-
-    if row >= a and row <= b and column == c:
-        x = win_game_list[k]
-        x = x + 1
-        win_game_list[k] = x
-    else:
-        toggle = False
-
-    k = k - 24
-
-for l in range (0, 12):
-    rem = l % 4
-    quot = int((i - rem)/3)
-    co_ord = quot * 10 + rem
-    co_ord = co_ord + 11
-    a = co_ord % 11
-    b = co_ord + 33
-
-    if 
-
 
 
