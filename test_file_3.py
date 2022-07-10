@@ -1,23 +1,38 @@
-win_list = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+
 
 co_ord = column * 10 + row
 
 
-def add_to_list(a, b, c, d, e, f, g, h, i, j, k, l, m):
-    win_list[a] = win_list[a] + 1
-    win_list[b] = win_list[b] + 1
-    win_list[c] = win_list[c] + 1
-    win_list[d] = win_list[d] + 1
-    win_list[e] = win_list[e] + 1
-    win_list[f] = win_list[f] + 1
-    win_list[g] = win_list[g] + 1
-    win_list[h] = win_list[h] + 1
-    win_list[i] = win_list[i] + 1
-    win_list[j] = win_list[j] + 1
-    win_list[k] = win_list[k] + 1
-    win_list[l] = win_list[l] + 1
-    win_list[m] = win_list[m] + 1
-    
+def add_to_list(a, b, c, d, e, f, g, h, i, j, k, l, m, n):
+    if n == 1:
+        win_list_1[a] = win_list[a] + 1
+        win_list_1[b] = win_list[b] + 1
+        win_list_1[c] = win_list[c] + 1
+        win_list_1[d] = win_list[d] + 1
+        win_list_1[e] = win_list[e] + 1
+        win_list_1[f] = win_list[f] + 1
+        win_list_1[g] = win_list[g] + 1
+        win_list_1[h] = win_list[h] + 1
+        win_list_1[i] = win_list[i] + 1
+        win_list_1[j] = win_list[j] + 1
+        win_list_1[k] = win_list[k] + 1
+        win_list_1[l] = win_list[l] + 1
+        win_list_1[m] = win_list[m] + 1
+    elif n == 2:
+        win_list_2[a] = win_list[a] + 1
+        win_list_2[b] = win_list[b] + 1
+        win_list_2[c] = win_list[c] + 1
+        win_list_2[d] = win_list[d] + 1
+        win_list_2[e] = win_list[e] + 1
+        win_list_2[f] = win_list[f] + 1
+        win_list_2[g] = win_list[g] + 1
+        win_list_2[h] = win_list[h] + 1
+        win_list_2[i] = win_list[i] + 1
+        win_list_2[j] = win_list[j] + 1
+        win_list_2[k] = win_list[k] + 1
+        win_list_2[l] = win_list[l] + 1
+        win_list_2[m] = win_list[m] + 1
 
 
 if co_ord == 11:
