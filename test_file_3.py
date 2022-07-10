@@ -1,4 +1,9 @@
+win_list_1 = []
+win_list_2 = []
 
+for i in range (0, 70):
+    win_list_1.append(0)
+    win_list_2.append(0)
 
 
 co_ord = column * 10 + row
