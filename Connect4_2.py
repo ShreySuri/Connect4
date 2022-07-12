@@ -1,9 +1,6 @@
 import turtle
 
 
-
-
-
 width = 120
 length = 6 * width
 
@@ -95,18 +92,30 @@ while win = False or total_moves < 42:
         guess_1 = float(guess_1)
     guess_1 = int(guess_1)
     
+    marker.forward(width * guess_1)
+    marker.left(90)
+    
     if guess_1 == 1:
         height_1 = height_1 + 1
+        marker.forward(height_1 * width)
     elif guess_1 == 2:
         height_2 = height_2 + 1
+        marker.forward(height_2 * width)
     elif guess_1 == 3:
         height_3 = height_3 + 1
+        marker.forward(height_3 * width)
     elif guess_1 == 4:
         height_4 = height_4 + 1
+        marker.forward(height_4 * width)
     elif guess_1 == 5:
         height_5 = height_5 + 1
+        marker.forward(height_5 * width)
     elif guess_1 == 6
         height_6 = height_6 + 1
+        marker.forward(height_6 * width)
     elif guess_1 == 7:
         height_7 = height_7 + 1
+        marker.forward(height_7 * width)
+        
+  
 
