@@ -117,7 +117,17 @@ while win = False or total_moves < 42:
     else:
        print("Something went wrong.")
 
+    height = int(str_height)
+
     marker.forward(width * guess_1)
     marker.left(90)
-    height = int(str_height)
     marker.forward(width * height)
+    
+    ###############################################
+    
+    marker.right(180)
+    marker.forward(width * height)
+    marker.right(90)
+    marker.forward(guess_1)
+    
+    co_ord == guess_1 * 10 + height
