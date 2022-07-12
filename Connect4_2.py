@@ -69,9 +69,9 @@ for i in range (0,7):
 marker = turtle.Pen()
 marker.up()
 marker.right(90)
-marker.forward(0.5 * length)
+marker.forward(3.5 * width)
 marker.right(90)
-marker.forward(3 * width)
+marker.forward(4 * width)
 marker.right(180)
 
 
@@ -85,11 +85,28 @@ height_7 = 0
 
 
 win = False
+total_moves = 0
 
-
-
-
-
-while win = False:
+while win = False or total_moves < 42:
+    guess_1 = 0
+    while guess_1 % 1 != or guess_1 < 1 or guess_1 > 7:
+        print("")
+        guess_1 = input(print("Player 1, choose a column from 1 - 7."))
+        guess_1 = float(guess_1)
+    guess_1 = int(guess_1)
     
+    if guess_1 == 1:
+        height_1 = height_1 + 1
+    elif guess_1 == 2:
+        height_2 = height_2 + 1
+    elif guess_1 == 3:
+        height_3 = height_3 + 1
+    elif guess_1 == 4:
+        height_4 = height_4 + 1
+    elif guess_1 == 5:
+        height_5 = height_5 + 1
+    elif guess_1 == 6
+        height_6 = height_6 + 1
+    elif guess_1 == 7:
+        height_7 = height_7 + 1
 
