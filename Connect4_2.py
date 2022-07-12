@@ -123,11 +123,15 @@ while win = False or total_moves < 42:
     marker.left(90)
     marker.forward(width * height)
     
-    ###############################################
-    
+    marker.width(width)
+    marker.forward(1)
+    marker.width(1)
     marker.right(180)
+    marker.forward(1)
+    
     marker.forward(width * height)
     marker.right(90)
     marker.forward(guess_1)
+    marker.right(180)
     
     co_ord == guess_1 * 10 + height
