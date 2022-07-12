@@ -74,7 +74,21 @@ marker.right(90)
 marker.forward(3 * width)
 marker.right(180)
 
+
+height_1 = 0
+height_2 = 0
+height_3 = 0
+height_4 = 0
+height_5 = 0
+height_6 = 0
+height_7 = 0
+
+
 win = False
+
+
+
+
 
 while win = False:
     
