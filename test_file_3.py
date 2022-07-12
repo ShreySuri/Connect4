@@ -118,3 +118,17 @@ elif co_ord == 37:
     add_to_list(20, 21, 22, 32, 67, 69, 69, 69, 69, 69, 69, 69, 69, x)
 elif co_ord == 47:
     add_to_list(20, 21, 22, 23, 35, 53, 68, 69, 69, 69, 69, 69, 69, x)
+    
+    
+win = False
+
+for i in range (0, 69):
+    if win_list_1[i] == 4:
+        win = True
+    else:
+        win = win
+for i in range (0, 69):
+    if win_list_2[i] == 4:
+        win = True
+    else:
+        win = win
