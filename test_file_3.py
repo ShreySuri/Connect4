@@ -123,7 +123,7 @@ elif co_ord == 57:
 elif co_ord == 67:
     add_to_list(22, 23, 41, 55, 69, 69, 69, 69, 69, 69, 69, 69, 69, x)
 elif co_ord == 77:
-
+    add_to_list(23, 44, 56, 69, 69, 69, 69, 69, 69, 69, 69, 69, 69, x)
     
 win = False
 
