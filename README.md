@@ -5,3 +5,5 @@ Connect4 is a two-player connection board game. Players choose a color and take 
 
  -- The grid has 6 rows and 7 columns
  -- Tokens fall straight down, occupying the lowest available space within the column
+ 
+ The objective of the game is to be the first player to form a vertical, horizontal, or diagonal line out of one's own tokens.
