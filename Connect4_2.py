@@ -134,4 +134,6 @@ while win = False or total_moves < 42:
     marker.forward(guess_1)
     marker.right(180)
     
-    co_ord == guess_1 * 10 + height
+
+    co_ord = column * 10 + row
+    player = 3 - player
