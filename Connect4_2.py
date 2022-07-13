@@ -1,5 +1,34 @@
 import turtle
 
+def add_to_list(a, b, c, d, e, f, g, h, i, j, k, l, m, n):
+    if n == 1:
+        win_list_1[a] = win_list[a] + 1
+        win_list_1[b] = win_list[b] + 1
+        win_list_1[c] = win_list[c] + 1
+        win_list_1[d] = win_list[d] + 1
+        win_list_1[e] = win_list[e] + 1
+        win_list_1[f] = win_list[f] + 1
+        win_list_1[g] = win_list[g] + 1
+        win_list_1[h] = win_list[h] + 1
+        win_list_1[i] = win_list[i] + 1
+        win_list_1[j] = win_list[j] + 1
+        win_list_1[k] = win_list[k] + 1
+        win_list_1[l] = win_list[l] + 1
+        win_list_1[m] = win_list[m] + 1
+    elif n == 2:
+        win_list_2[a] = win_list[a] + 1
+        win_list_2[b] = win_list[b] + 1
+        win_list_2[c] = win_list[c] + 1
+        win_list_2[d] = win_list[d] + 1
+        win_list_2[e] = win_list[e] + 1
+        win_list_2[f] = win_list[f] + 1
+        win_list_2[g] = win_list[g] + 1
+        win_list_2[h] = win_list[h] + 1
+        win_list_2[i] = win_list[i] + 1
+        win_list_2[j] = win_list[j] + 1
+        win_list_2[k] = win_list[k] + 1
+        win_list_2[l] = win_list[l] + 1
+        win_list_2[m] = win_list[m] + 1
 
 width = 120
 length = 6 * width
@@ -80,6 +109,14 @@ height_5 = 0
 height_6 = 0
 height_7 = 0
 
+win_list_1 = []
+win_list_2 = []
+
+for i in range (0, 70):
+    win_list_1.append(0)
+    win_list_2.append(0)
+
+player = 2
 
 win = False
 total_moves = 0
