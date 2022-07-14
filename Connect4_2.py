@@ -121,9 +121,9 @@ player = 2
 win = False
 total_moves = 0
 
-while win = False or total_moves < 42:
+while win == False or total_moves < 42:
     guess_1 = 0
-    while guess_1 % 1 != or guess_1 < 1 or guess_1 > 7:
+    while guess_1 % 1 != 0 or guess_1 < 1 or guess_1 > 7:
         print("")
         guess_1 = input(print("Player 1, choose a column from 1 - 7."))
         guess_1 = float(guess_1)
