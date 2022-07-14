@@ -98,31 +98,31 @@ elif co_ord == 74:
     add_to_list(15, 42, 43, 44, 48, 69, 69, 69, 69, 69, 69, 69, 69, x)
 elif co_ord == 15:
     add_to_list(16, 25, 26, 61, 69, 69, 69, 69, 69, 69, 69, 69, 69, x)
-elif co_ord == 26:
+elif co_ord == 25:
     add_to_list(16, 17, 28, 29, 62, 65, 69, 69, 69, 69, 69, 69, 69, x)
-elif co_ord == 36:
+elif co_ord == 35:
     add_to_list(16, 17, 18, 31, 32, 53, 63, 66, 69, 69, 69, 69, 69, x)
-elif co_ord == 46:
+elif co_ord == 45:
     add_to_list(16, 17, 18, 19, 34, 35, 49, 54, 64, 67, 69, 69, 69, x)
-elif co_ord == 56:
+elif co_ord == 55:
     add_to_list(17, 18, 19, 37, 38, 50, 55, 68, 69, 69, 69, 69, 69, x)
-elif co_ord == 66:
+elif co_ord == 65:
     add_to_list(18, 19, 40, 41, 51, 56, 69, 69, 69, 69, 69, 69, 69, x)
-elif co_ord == 76:
+elif co_ord == 75:
     add_to_list(19, 43, 44, 52, 69, 69, 69, 69, 69, 69, 69, 69, 69, x)
-elif co_ord == 17:
+elif co_ord == 16:
     add_to_list(20, 26, 65, 69, 69, 69, 69, 69, 69, 69, 69, 69, 69, x)
-elif co_ord == 27:
+elif co_ord == 26:
     add_to_list(20, 21, 29, 66, 69, 69, 69, 69, 69, 69, 69, 69, 69, x)
-elif co_ord == 37:
+elif co_ord == 36:
     add_to_list(20, 21, 22, 32, 67, 69, 69, 69, 69, 69, 69, 69, 69, x)
-elif co_ord == 47:
+elif co_ord == 46:
     add_to_list(20, 21, 22, 23, 35, 53, 68, 69, 69, 69, 69, 69, 69, x)
-elif co_ord == 57:
+elif co_ord == 56:
     add_to_list(21, 22, 23, 38, 54, 69, 69, 69, 69, 69, 69, 69, 69, x)
-elif co_ord == 67:
+elif co_ord == 66:
     add_to_list(22, 23, 41, 55, 69, 69, 69, 69, 69, 69, 69, 69, 69, x)
-elif co_ord == 77:
+elif co_ord == 76:
     add_to_list(23, 44, 56, 69, 69, 69, 69, 69, 69, 69, 69, 69, 69, x)
     
 win = False
