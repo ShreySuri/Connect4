@@ -145,7 +145,7 @@ while win == False or total_moves < 42:
     elif guess_1 == 5:
         height_5 = height_5 + 1
         str_height = str(height_5)
-    elif guess_1 == 6
+    elif guess_1 == 6:
         height_6 = height_6 + 1
         str_height = str(height_6)
     elif guess_1 == 7:
@@ -172,5 +172,5 @@ while win == False or total_moves < 42:
     marker.right(180)
     
 
-    co_ord = column * 10 + row
+    co_ord = guess_1 * 10 + height
     player = 3 - player
